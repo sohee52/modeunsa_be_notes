@@ -26,7 +26,7 @@ AuthTokenUseCase.issueTokens()
 3) TokenResponse 반환
 ```
 
-**JwtTokenProvider.createAccessToken()**에서 JWT 구조:
+**JwtTokenProvider.createAccessToken()** 에서 JWT 구조:
 - subject: memberId
 - claim: role
 - expiration: 30분 (Access) / 7일 (Refresh)
@@ -70,7 +70,7 @@ AuthTokenUseCase.reissueTokens()
 5) 새 토큰 세트 발급
 ```
 
-**Refresh Token Rotation** 구현되어 있어서 재발급 시 기존 토큰은 무효화돼.
+**Refresh Token Rotation** 구현되어 있어서 재발급 시 기존 토큰은 무효화됨.
 
 ---
 
